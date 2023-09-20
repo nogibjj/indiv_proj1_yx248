@@ -1,5 +1,6 @@
 # Basic utilities
 requests==2.26.0
+ruff
 pandas==2.0.3
 
 # Data visualization
