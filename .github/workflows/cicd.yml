@@ -25,4 +25,4 @@ jobs:
     - name: Format with Black
       run: make format
     - name: Test Notebook with nbval
-      run: pytest --nbval notebooks/descriptive_statistics.ipynb
+      run: pytest --nbval descriptive_statistics.ipynb
