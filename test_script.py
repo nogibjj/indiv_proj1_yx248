@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../src')
-
 from lib import load_data, get_descriptive_statistics, plot_data_distribution
 
 def test_script_main_logic():
