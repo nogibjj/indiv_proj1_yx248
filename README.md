@@ -1,5 +1,7 @@
 # indiv_proj1_yx248
 
+[![CI/CD Status](https://github.com/nogibjj/indiv_proj1_yx248/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/indiv_proj1_yx248/actions/workflows/cicd.yml)
+
 This project is a comprehensive example of leveraging Continuous Integration using GitHub Actions for a Python Data Science project. Building upon the foundation of structured project directories and workflows, the main aim is to compute descriptive statistics using the Pandas (or Polars) library and visualize data distribution. Additionally, with the integration of GitHub Actions, we ensure that code health is maintained by running tests, linting, and formatting automatically on every push or pull request.
 
 ## Overview
@@ -59,5 +61,3 @@ Continuous Integration is ensured with the following workflows:
 
   ![Price Distribution](Price_distribution.png)
 
-
-[![example workflow](https://github.com/nogibjj/indiv_proj1_yx248/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/indiv_proj1_yx248/actions/workflows/cicd.yml)
