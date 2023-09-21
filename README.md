@@ -1,33 +1,43 @@
 # indiv_proj1_yx248
 
-This repository is a continuation of the IDS706 course assignments, focusing on Mini Project 2. Building upon the foundational [ids706-python-template](https://github.com/xuy50/ids706-python-template), it modifies and introduces Pandas-based descriptive statistics.
-This script processes data from a CSV file to compute descriptive statistics and generate a visualization for data distribution.
+This project is a comprehensive example of leveraging Continuous Integration using GitHub Actions for a Python Data Science project. Building upon the foundation of structured project directories and workflows, the main aim is to compute descriptive statistics using the Pandas (or Polars) library and visualize data distribution. Additionally, with the integration of GitHub Actions, we ensure that code health is maintained by running tests, linting, and formatting automatically on every push or pull request.
 
 ## Overview
 
-Utilizing the Pandas library, this project demonstrates essential techniques for statistical analysis on datasets.
+The project is structured with separate scripts for data processing, shared library functions, and Jupyter notebooks for interactive data exploration.
 
 ## Key Modifications from Original Template
 
-- Transformed `mean.py` to exhibit a sample Pandas descriptive statistics script.
-- Adjusted `test_main.py` to reflect changes introduced in `mean.py`.
-- Integrated `pandas 2.1.0` within `requirements.txt` to facilitate data manipulation and statistical functions.
+- Utilization of the Polars/Pandas library for efficient and robust data processing.
+- Continuous Integration with GitHub Actions, ensuring code quality and health.
+- Shared codebase (lib.py) for both script and Jupyter notebook, promoting code reusability and consistency.
 
 ### Requirements
 
-Ensure the presence of:
+For a complete list, refer to requirements.txt. Key requirements include:
 - Python (Version 3.6 or newer)
 - Pandas (Version 2.1.0)
+- pytest and nbval for testing
 - nbval (Version 0.9.6)
-- Ruff
+- black for code formatting
+- ruff for linting
 
 ## Functionality
 
-- **`load_data()`**: Imports the `dataset_sample.csv` and returns a DataFrame.
+- **`load_data()`**: Imports the `dataset_sample.csv` and returns a DataFrame or DataFrame-like structure (based on Polars or Pandas).
 
-- **`get_descriptive_statistics(data)`**: Generates descriptive statistics from the DataFrame.
+- **`get_descriptive_statistics(data)`**: Computes and returns descriptive statistics from the data.
 
-- **`plot_data_distribution(data, column_name)`**: Visualizes and saves a histogram for the specified column.
+- **`plot_data_distribution(data, column_name)`**: Generates, visualizes, and optionally saves a histogram for the specified column from the data.
+
+## GitHub Actions Workflows
+
+Continuous Integration is ensured with the following workflows:
+
+- Installing dependencies from requirements.txt
+- Linting the codebase with Ruff (and optionally Pylint)
+- Formatting using the Black Python code formatter
+- Running tests on both the script and the Jupyter notebook using pytest and nbval
 
 ## Sample Output
 
