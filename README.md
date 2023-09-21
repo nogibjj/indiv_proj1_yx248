@@ -4,6 +4,8 @@
 
 This project is a comprehensive example of leveraging Continuous Integration using GitHub Actions for a Python Data Science project. Building upon the foundation of structured project directories and workflows, the main aim is to compute descriptive statistics using the Pandas (or Polars) library and visualize data distribution. Additionally, with the integration of GitHub Actions, we ensure that code health is maintained by running tests, linting, and formatting automatically on every push or pull request.
 
+- Demo video: https://youtu.be/O13461ZyT2M
+
 ## Overview
 
 The project is structured with separate scripts for data processing, shared library functions, and Jupyter notebooks for interactive data exploration.
